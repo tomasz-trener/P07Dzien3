@@ -1,0 +1,4 @@
+﻿
+
+Zamodeluj system biblioteczny zgodnie z załączonym rysunkiem. 
+

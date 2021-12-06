@@ -30,7 +30,7 @@ namespace P04ZadanieZawodnicy
             
 
             Console.ReadKey();
-
+            //https://github.com/tomasz-trener/P07Dzien3
         }
     }
 }

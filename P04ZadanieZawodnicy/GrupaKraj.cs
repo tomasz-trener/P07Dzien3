@@ -10,5 +10,11 @@ namespace P04ZadanieZawodnicy
     {
         public string NazwaKraju;
         public double SredniaWartosc;
+
+        public GrupaKraj(string nazwaKraju, double sredniaWartosc)
+        {
+            NazwaKraju = nazwaKraju;
+            SredniaWartosc = sredniaWartosc;
+        }
     }
 }

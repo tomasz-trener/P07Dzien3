@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -7,16 +8,44 @@ using System.Threading.Tasks;
 
 namespace P04ZadanieZawodnicy
 {
+    enum TypZrodlaDanych
+    {
+        Lokalne,
+        Zdalne,
+       
+    }
+
     class ManagerZawodnikow
     {
-        const string url = "http://tomaszles.pl/wp-content/uploads/2019/06/zawodnicy.txt";
+       // const string sciezka = "http://tomaszles.pl/wp-content/uploads/2019/06/zawodnicy.txt";
 
         public Zawodnik[] Zawodnicy;
 
+        private TypZrodlaDanych typ;
+        private string sciezka;
+
+        public ManagerZawodnikow(TypZrodlaDanych typ, string sciezka)
+        {
+            this.typ = typ;
+            this.sciezka = sciezka;
+        }
+
+
         public void WczytajZawodnikow() 
-        {        
-            WebClient wc = new WebClient();
-            string dane = wc.DownloadString(url);
+        {
+            string dane ="";
+            if (typ== TypZrodlaDanych.Zdalne)
+            {
+                WebClient wc = new WebClient();
+                dane = wc.DownloadString(sciezka);
+            }else if(typ == TypZrodlaDanych.Lokalne)
+            {
+                dane = File.ReadAllText(sciezka);
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
 
             // string[] wiersze = dane.Split();
 
@@ -90,9 +119,9 @@ namespace P04ZadanieZawodnicy
             {
                 double wzrost= PodajSredniWzrost(kraje[i]);
 
-                GrupaKraj gk = new GrupaKraj();
-                gk.NazwaKraju = kraje[i];
-                gk.SredniaWartosc = wzrost;
+                GrupaKraj gk = new GrupaKraj(kraje[i], wzrost);
+               // gk.NazwaKraju = kraje[i];
+              //  gk.SredniaWartosc = wzrost;
 
                 wynik[i] = gk;
             }

@@ -1,0 +1,26 @@
+﻿
+c1.
+Stwórz klase ManagerZawodnikow z metodą, która umożliwoa wczytanie zawodnikow do tablicy zawodników
+
+c2.
+Dodaj do klasy ManagerZawodnikow dwie metody:
+- PodajSredniWzrostZawodnikow
+- PodajSredniaWageZawodnikow
+
+
+c3.
+- PodajSredniWzrostDlaKazdegoKraju
+pol 187   <-- GrupaKraj { nazwaKraju, sredniWzrost }
+ger 178
+fin 186
+...
+
+GrupaKraj[]
+
+c4.
+Dodaj do klasy ManagerZawodnikow 
+konstruktor, który będzie umożliwiał wybór 
+czy chcemy importować dane z pliku lokalnego
+czy z pliku zdalnego na serwerze 
+skorzystaj enumeratora - opcja : Lokalna, Zdalna
+

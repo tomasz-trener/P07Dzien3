@@ -1,4 +1,34 @@
 ﻿
 
 Zamodeluj system biblioteczny zgodnie z załączonym rysunkiem. 
-
+1) Karta
+- Tytul (string)
+- Numer (string)
+- Wydanie (int)
+- DataZakupu (Datetime)
+- Sygnatury (Sygnatura[])
+- Nastepna (Karta)
+- Poprzednia (Karta)
+- Cena (Cena)
+- Autor (Autor[])	
+2) Czytelnik
+ - NrKarty (string)
+3) Sygnatura
+ - Wypozyczenia (Wypozyczenie[])
+ - Numer (int)
+ - Uwagi (string)
+ - Aktywna (bool)
+4) Autor 
+ - Imie
+ - Nazwisko
+ - DrugieImie
+5) Cena
+ - Wartosc (double)
+ - Uwagi (string)
+6) Wypozyczenie
+ - Czytelnik (Czytelnik)
+ - DataWypozyczenia (Datetime)
+ - PrzewidywanaDataZwrotu (Datetime)
+ - RzeczywistaDataZwrotu (DateTime)
+ - Uwagi (string)
+ - Przedluzenie (Wypozyczenie)

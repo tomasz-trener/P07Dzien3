@@ -28,7 +28,10 @@ namespace P03ZadanieManagerZawodnikow
 
                 Zawodnik z = new Zawodnik(komorki[2], komorki[3]);
                 z.Id_zawodnika = Convert.ToInt32(komorki[0]);
-                z.Id_trenera = Convert.ToInt32(komorki[1]);
+                
+                //if(komorki[1] != "")
+                 if(!string.IsNullOrWhiteSpace(komorki[1]))
+                    z.Id_trenera = Convert.ToInt32(komorki[1]);
              //   z.Imie = komorki[2];
              //   z.Nazwisko = komorki[3];
                 z.Kraj = komorki[4];

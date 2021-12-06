@@ -1,0 +1,18 @@
+﻿
+
+c1.
+Stwórz klase Zawodnik i dodaj do niej pola: Imie, Nazwisko... i inne  zgodnie z plikiem zawodnicy.txt
+
+c2.
+następnie wczytaj z pliku zawodnicy.txt wszystkie dane do tablicy zawodników
+
+c3.
+
+nastepnie dodaj do klasy zawodnik metodę PrzedstawSie, która zwraca napis w postaci:
+Nazywam się {imie} {nazwisko} i pochodzę z {kraju}
+
+c4. 
+dodaj do klasy zawodnik konstruktor, który wymusza podczas tworzenia zawodnika, podanie jego imienia i nazwiska 
+
+c5.
+w petli wyswietl wszystkich zawodnikow, i niech kazy zawodnik sie przedstawi. 

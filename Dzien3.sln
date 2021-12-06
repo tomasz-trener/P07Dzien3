@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01ZadaniePogoda", "P01ZadaniePogoda\P01ZadaniePogoda.csproj", "{435CAD4E-9662-43DF-B4C4-B48B4990083E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02ZadanieZawodnicy", "P02ZadanieZawodnicy\P02ZadanieZawodnicy.csproj", "{7D99C11C-36AF-4D0C-BBF0-83FF65D847D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{435CAD4E-9662-43DF-B4C4-B48B4990083E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{435CAD4E-9662-43DF-B4C4-B48B4990083E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{435CAD4E-9662-43DF-B4C4-B48B4990083E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{435CAD4E-9662-43DF-B4C4-B48B4990083E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D99C11C-36AF-4D0C-BBF0-83FF65D847D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D99C11C-36AF-4D0C-BBF0-83FF65D847D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D99C11C-36AF-4D0C-BBF0-83FF65D847D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D99C11C-36AF-4D0C-BBF0-83FF65D847D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5342A0A-7D89-4DE4-B145-0CA335CFBE12}
+	EndGlobalSection
+EndGlobal
